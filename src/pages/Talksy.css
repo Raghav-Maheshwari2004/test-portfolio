@@ -1,0 +1,63 @@
+.container {
+    width: 85%; /* Slightly wider for better spacing */
+    padding: 30px;
+}
+
+/* Title with Image */
+.title {
+    font-size: 36px; /* Increased font size */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* More space between image and text */
+    color: #007bff;
+}
+
+/* Subtitles */
+.subtitle {
+    font-size: 28px; /* Bigger subtitles */
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* Paragraph Text */
+.text {
+    font-size: 20px; /* Larger font for readability */
+    color: #333;
+    margin-top: 12px;
+}
+
+/* Screenshots Section */
+.about-app {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* More space between images */
+    margin-top: 40px;
+}
+
+/* Screenshot Styling */
+.about-app img {
+    max-width: 2500px; /* Increase max width for bigger images */
+    width: 100%; /* Keep it responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.about-app img:hover {
+    transform: scale(1.1); /* More noticeable hover effect */
+}
+
+/* Description Below Images */
+.about-app div {
+    text-align: left; /* Align text left */
+    font-size: 20px; /* Increased text size */
+    color: #444;
+    padding: 18px 0;
+    max-width: 1400px; /* Keep text width balanced */
+    margin: auto;
+}

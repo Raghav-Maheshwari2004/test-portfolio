@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background: #3f84c9; 
+    width: 100%;
+    
+
+    /* overflow-x: hidden; */
+}
+
+/* Full-screen Intro Section */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+   min-height: 100vh;
+    padding: 20px 20px;
+    background: #ffffff; 
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.header-text {
+    width: 100%;
+    font-size: 18px;
+    color: #555; 
+}
+
+.header-text h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    color: black; 
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.header-text h1:hover::after {
+    width: 80px;
+}
+.intro-links-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.intro-links-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Box size */
+    height: 50px;
+    /* border: 2px solid #007bff; Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.intro-links-container a:hover {
+     
+    transform: scale(1.5);
+}
+
+.intro-links {
+    width: 40px; /* Icon size */
+    height: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .header-text, .right {
+        width: 100%;
+    }
+}
