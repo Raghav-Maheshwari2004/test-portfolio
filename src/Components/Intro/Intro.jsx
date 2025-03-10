@@ -23,10 +23,10 @@ const Intro = () => {
         <h1>Hey, I am Raghav Maheshwari </h1>
         <h1>I'm  <span ref={typedElement}/></h1>
         <p className="intro-links-container">
-  <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Raghav-Maheshwari2004" target="_blank" rel="noopener noreferrer">
     <img className="intro-links" src={assets.git} alt="GitHub" />
   </a>
-  <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/raghav-maheshwari-803012275/" target="_blank" rel="noopener noreferrer">
     <img className="intro-links" src={assets.linked} alt="LinkedIn" />
   </a>
 </p>
