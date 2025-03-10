@@ -1,0 +1,29 @@
+html, body {
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --accent: #ff6f61;
+    --heading-color: #222222;
+    --icon-filter: none;
+}
+
+[data-theme='dark'] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --accent: #ff6f61;
+    --heading-color: #ffffff;
+    --icon-filter: brightness(0) invert(1);
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}

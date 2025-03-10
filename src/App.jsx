@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Intro from "./Components/Intro/Intro";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
-import Talksy from "./pages/Talksy"; // Import Talksy Page
+import './styles/theme.css';
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
           <About />
           <Footer />
         </>} />
-        <Route path="/talksy" element={<Talksy />} />
+        
       </Routes>
     </Router>
   );

@@ -2,23 +2,20 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-    background: #3f84c9; 
+    background: var(--bg-primary);
     width: 100%;
-    
-
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
-/* Full-screen Intro Section */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     width: 100%;
-   min-height: 100vh;
-    padding: 20px 20px;
-    background: #ffffff; 
+    min-height: 100vh;
+    padding: 2rem;
+    background: var(--bg-primary);
     border-radius: 10px;
     transition: 0.3s ease-in-out;
     position: relative;
@@ -27,26 +24,142 @@ body, html {
 .header-text {
     width: 100%;
     font-size: 18px;
-    color: #555; 
+    color: var(--text-secondary);
+    padding: 0 1rem;
 }
 
 .header-text h1 {
-    font-size: 50px;
+    font-size: 3.5rem;
     margin-top: 10px;
-    color: black; 
+    color: var(--heading-color);
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: 1px;
     position: relative;
+    line-height: 1.2;
 }
 
-.header-text h1:hover::after {
-    width: 80px;
+/* Large Screens */
+@media (min-width: 1200px) {
+    .header-text h1 {
+        font-size: 4rem;
+    }
 }
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .header-container {
+        padding: 1.5rem;
+    }
+
+    .header-text h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 1rem;
+        min-height: 90vh;
+    }
+
+    .header-text {
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+        margin-top: 5px;
+    }
+
+    .intro-links-container {
+        gap: 12px;
+    }
+
+    .intro-links-container a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .intro-links {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 1rem 0.5rem;
+        min-height: 85vh;
+    }
+
+    .header-text {
+        font-size: 14px;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+    }
+
+    .intro-links-container {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .intro-links-container a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .intro-links {
+        width: 30px;
+        height: 30px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 480px) and (orientation: landscape) {
+    .header-container {
+        min-height: 120vh;
+    }
+}
+
+/* Button Styles */
+.primary-btn,
+.secondary-btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+}
+
 .intro-links-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     margin-top: 20px;
 }
@@ -55,33 +168,44 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Box size */
+    width: 50px;
     height: 50px;
-    /* border: 2px solid #007bff; Blue border */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
     padding: 5px;
     transition: all 0.3s ease-in-out;
+    background: var(--bg-secondary);
 }
 
 .intro-links-container a:hover {
-     
-    transform: scale(1.5);
+    transform: scale(1.2);
+    background: var(--accent);
 }
 
 .intro-links {
-    width: 40px; /* Icon size */
+    width: 40px;
     height: 40px;
+    filter: var(--icon-filter);
 }
 
+.intro {
+    background: var(--bg-primary);
+}
 
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 15px;
-    }
+.intro-content h1 {
+    color: var(--heading-color);
+}
 
-    .header-text, .right {
-        width: 100%;
-    }
+.intro-content p {
+    color: var(--text-secondary);
+}
+
+.primary-btn {
+    background: var(--accent);
+    color: var(--bg-primary);
+}
+
+.secondary-btn {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 2px solid var(--accent);
 }
