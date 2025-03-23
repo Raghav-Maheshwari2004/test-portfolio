@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import './Navbar.css'
 import { useState, useEffect } from 'react';
 import { FiSun, FiMoon, FiMenu } from 'react-icons/fi'; // Add FiMenu import
+import assets from '../../assets/assests';
 
 const Navbar = () => {
     const [theme, setTheme] = useState('light');
@@ -33,7 +34,7 @@ const Navbar = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#skill">Skills</a></li>
-                    <li><a href="#" download>Resume</a></li>
+                    <li><a href={assets.resume} download>Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                    
                 </ul>

@@ -40,7 +40,7 @@ const About = () => {
               <div className="timeline-item">
                 <h3>12th Grade</h3>
                 <small>(2022)</small>
-                <p>Graduated 12th Grade in 2022, specializing in Physics, Chemistry, and Mathematics, securing 82%.</p>
+                <p>Completed 12th Grade in 2022, specializing in Physics, Chemistry, and Mathematics securing 82%.</p>
               </div>
               <div className="timeline-item">
                 <h3>10th Grade</h3>
@@ -178,9 +178,10 @@ const About = () => {
     </div>
   </div>
 )}
-<div>
-  <h1>My Works</h1>
-  <a href="https://talksy-wxza.vercel.app">
+<div className="works-section">
+  <h1 className="works-title">My Works</h1>
+  <h2 className="works-project-title">Talksy : Chatting app</h2>
+  <p className="works-description">Talksy is a real-time chat application designed for interactive communication. It allows users to sign up, log in, and engage in conversations with others through an intuitive and modern interface.</p><a href="https://talksy-wxza.vercel.app">
     <img className="works" src={assets.talksy2} alt="Talksy Project" />
     </a>
 </div>

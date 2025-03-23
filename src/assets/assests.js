@@ -28,6 +28,7 @@ import screenshot4 from "./4.png"
 import screenshot5 from "./5.png"
 import screenshot6 from "./6.png"
 import screenshot7 from "./7.png"
+import resume from "./Raghav Maheshwari Resume.pdf"
 
 const assets = {
   cf1,
@@ -59,7 +60,8 @@ const assets = {
   screenshot4,
   screenshot5,
   screenshot6,
-  screenshot7
+  screenshot7,
+  resume
 };
 
 export default assets;
