@@ -184,13 +184,12 @@ const About = () => {
   <p className="works-description">Talksy is a real-time chat application designed for interactive communication. It allows users to sign up, log in, and engage in conversations with others through an intuitive and modern interface.</p><a href="https://talksy-wxza.vercel.app">
     <img className="works" src={assets.talksy2} alt="Talksy Project" />
     </a>
-    <h2 className="works-project-title">Talksy : Chatting app</h2>
-  <p className="works-description">Talksy is a real-time chat application designed for interactive communication. It allows users to sign up, log in, and engage in conversations with others through an intuitive and modern interface.</p><a href="https://talksy-wxza.vercel.app"></a>
-</div>
-<h2 className="works-project-title">Skillizer-Skill Analysis Platform</h2>
+    <h2 className="works-project-title">Skillizer-Skill Analysis Platform</h2>
   <p className="works-description">I developed a Skill Assessment and Analysis Platform that uses Gemini AI to evaluate users based on their technical skills, interpersonal abilities, and academic achievements. The platform analyzes the input data and generates a personalized score along with detailed feedback, suggestions for improvement, and category-wise performance breakdown.The website is fully responsive, includes secure login functionality, and stores user data using Firebase . </p>
   <p>Technologies used include React.js, Java, HTML, CSS, JavaScript, Gemini AI API, and RESTful APIs.</p><a href="https://skillizer.vercel.app/">
   <img className="works" src={assets.Skill} alt="Skill assesment Project" /></a>
+</div>
+
     </div>
   );
 };
