@@ -29,6 +29,7 @@ import screenshot5 from "./5.png"
 import screenshot6 from "./6.png"
 import screenshot7 from "./7.png"
 import resume from "./Raghav Maheshwari Resume.pdf"
+import Skill from "./Skillizer.png"
 
 const assets = {
   cf1,
@@ -61,7 +62,8 @@ const assets = {
   screenshot5,
   screenshot6,
   screenshot7,
-  resume
+  resume,
+  Skill
 };
 
 export default assets;
